@@ -79,7 +79,7 @@ mkdir -p headers/$ABI
 cp gmp/gmp.h headers/$ABI
 # ...and tests
 mkdir -p tests/$ABI
-for file in $(cd gmp/tests; find -name 't-*' -perm /111); do
+for file in $(cd gmp/tests; find -name 't-*' -type f -perm /111); do
     dir=$(dirname $file)
     mkdir -p tests/$ABI/$dir
     cp gmp/tests/$file tests/$ABI/$dir
