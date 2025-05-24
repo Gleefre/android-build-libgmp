@@ -6,6 +6,6 @@ ABI=x86_64 ./make-gmp.sh
 
 Possible ABIs: x86, x86_64, arm64-v8a, armeavi-v7a.
 
-The compiled shared library will be in the lib/$ABI/ folder.
-Headers are copied to headers/$ABI/ folder.
-Tests are copied to tests/$ABI/ folder (in theory they could be run later on a target device).
+The compiled shared library is copied to the lib/$ABI/ folder.
+Headers are copied to the headers/$ABI/ folder.
+Tests are copied to the tests/$ABI/ folder (in theory they could be run later on a target device).
