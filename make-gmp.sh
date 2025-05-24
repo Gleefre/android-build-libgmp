@@ -60,6 +60,9 @@ export CXX=$TOOLCHAIN/bin/$TARGET$API-clang++
 export LD=$TOOLCHAIN/bin/ld.lld
 export RANLIB=$TOOLCHAIN/bin/llvm-ranlib
 export STRIP=$TOOLCHAIN/bin/llvm-strip
+export NM=$TOOLCHAIN/bin/llvm-nm
+export OBJDUMP=$TOOLCHAIN/bin/llvm-objdump
+export DLLTOOL=$TOOLCHAIN/bin/llvm-dlltool
 
 (
 cd gmp ;
